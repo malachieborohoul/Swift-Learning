@@ -14,6 +14,20 @@ let PI: Float=3.14
 
 print(PI)
 
+var population: Int
+
+population=3000
+print(population)
+
+let townName:String = "Ndjamena"
+
+print(townName)
+
+let townElevation: Float=300.4
+
+let townDescription:String = "\(townName) has a population of \(population), an elevation of \(townElevation) and \(numberOfStoplights) stoplights."
+
+print(townDescription)
 
 
 
