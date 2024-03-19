@@ -28,3 +28,15 @@ let b:Int8=50
 
 let c = a + Int16(b)
 
+
+let s:Double=3.4
+let f=3.4
+
+print(s==(f+0.1))
+
+let ticketCount = 1000
+
+let ticketNumbers=1..<ticketCount
+
+print(ticketNumbers)
+
