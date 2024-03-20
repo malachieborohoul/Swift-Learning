@@ -36,7 +36,7 @@ print(s==(f+0.1))
 
 let ticketCount = 1000
 
-let ticketNumbers=1..<ticketCount
+let ticketNumbers=1..<ticketCount                                                                   
 
 print(ticketNumbers)
 
