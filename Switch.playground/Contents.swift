@@ -49,3 +49,10 @@ case (_,404):
 default:
     print("Neither")
 }
+
+
+let age: Int = 18
+
+if case 18...35 = age {
+    print("Cool demographic")
+}
