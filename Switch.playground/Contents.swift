@@ -1,27 +1,51 @@
 import Cocoa
 
 var statusCode:  Int=17
+var errorString: String="The request failed with the error"
 
 
 switch statusCode{
 case 200...202:
     print("Passed")
-    fallthrough
+    
 case 400...417:
-    print("Client error \(statusCode)")
-    fallthrough
+   errorString = "Client error \(statusCode)"
+    
     
 case 500...507:
-    print("Server error \(statusCode)")
+    errorString = "Server error \(statusCode)"
   
     
 
 case let code where code < 100 || code >= 600:
-    print("Illegal status code")
-    fallthrough
+    errorString = "Illegal status code"
+    
 default:
-    print("None")
+    errorString="None"
 }
 
+// Tuples
+
+//let error = (statusCode, errorString)
+
+//print(error.1)
 
 
+let error = (code:statusCode, msg:errorString)
+
+
+let fistErrorCode=404
+let secondErrorCode=418
+
+let errorCodes = (fistErrorCode, secondErrorCode)
+
+switch errorCodes{
+case (404, 404):
+    print("Same")
+case (404,_):
+    print("First")
+case (_,404):
+    print("Second")
+default:
+    print("Neither")
+}
