@@ -25,13 +25,13 @@ for i in 1...100 {
     
 }
 
-
+/*
 var i = 5
 while i < 6{
     print(i)
     i+=1
     
-}
+}*/
 
 var j = 6
 repeat{
@@ -82,4 +82,32 @@ for i in 1...10{
     }else {
         print("\(i)")
     }
+}
+
+
+for i in 1...10{
+   
+    switch (i % 3, i % 5) {
+    case (0,_):
+        print("FIZZ")
+    case (_,0):
+        print("BUZZ")
+    default:
+        print("\(i)")
+    }
+    
+}
+
+var i = 1
+
+while i < 11{
+    switch (i % 3, i % 5) {
+    case (0,_):
+        print("FIZZ")
+    case (_,0):
+        print("BUZZ")
+    default:
+        print("\(i)")
+    }
+    i += 1
 }
