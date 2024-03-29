@@ -88,4 +88,21 @@ default:
 }
 */
 
+let marks = 10
+
+switch marks {
+case let a where 0...9~=a:
+    print("Not good")
+case let b where 10...20~=b:
+    print("Not bad")
+default:
+    print("Don't   know")
+}
+
+let status = (200,400)
+
+switch binaire {
+    case (
+}
+
 
