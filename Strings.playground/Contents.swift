@@ -42,10 +42,9 @@ print(play)
 
 
 
-let test = "Allo gars cava"
+let test = "Allo"
 
-let a = test.index(test.startIndex, offsetBy: 5)
-let b = test.index(a, offsetBy: 3)
+//let a = test.index(test.startIndex, offsetBy: 5)
+//let b = test.index(a, offsetBy: 3)
 
-print(test[a...b])
 
