@@ -67,3 +67,26 @@ if let first = streets.first, let last = streets.last{
 streets.forEach{
     street in print(street)
 }
+
+
+var toDOList = ["Take out the trash", "Py bills", "Cross off finished item"]
+
+if toDOList.isEmpty{
+    print("The TODO list is empty")
+}else{
+    print("You got \(toDOList.count) tasks to do today")
+}
+
+var i = 0
+var j = toDOList.count
+
+
+while (i < toDOList.count){
+    toDOList[i]=toDOList[j-1]
+    i += 1
+    j -= 1
+}
+streets.reverse()
+toDOList.shuffle()
+print(streets)
+print(toDOList)
