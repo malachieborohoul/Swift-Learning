@@ -37,3 +37,33 @@ var emptyFloats: Array<Float> = Array()
 
 // An array preinitialized wih a fixed number
 var digitCounts = Array(repeating: 0, count: 10)
+
+
+var streets:[String] = [
+    "Dembe",
+                   "Sabangali",
+                   "Moursal",
+                   "Farcha"
+]
+
+
+streets.append("Gassi")
+streets.append("Diguel")
+// IsEmpty property
+if streets.isEmpty{
+    print("There ain't no street")
+}else{
+    for street in streets{
+        print("I don't live in \(street)")
+    }
+}
+
+// first and last element
+if let first = streets.first, let last = streets.last{
+    print(first, last, separator:  ", ")
+}
+
+
+streets.forEach{
+    street in print(street)
+}
