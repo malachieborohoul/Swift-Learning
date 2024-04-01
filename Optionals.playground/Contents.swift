@@ -1,3 +1,10 @@
 import Cocoa
 
-var greeting = "Hello, playground"
+var errorCodeString: String?
+
+errorCodeString = "404"
+
+if errorCodeString != nil{
+    let  theError = errorCodeString!
+    print(theError)
+}

@@ -76,7 +76,7 @@ if toDOList.isEmpty{
 }else{
     print("You got \(toDOList.count) tasks to do today")
 }
-
+/*
 var i = 0
 var j = toDOList.count
 
@@ -90,3 +90,25 @@ streets.reverse()
 toDOList.shuffle()
 print(streets)
 print(toDOList)
+
+*/
+let A = [[1,2],[3,4]]
+let B = [[2,3],[6,7]]
+var C: [[Int]] = []
+var i = 0
+
+
+while i < A.count{
+    var j = 0
+    var row:[Int]=[]
+    while j < A[i].count{
+       
+        row.append(A[i][j]+B[i][j])
+        j += 1
+    }
+    C.append(row)
+    i += 1
+}
+
+print(C)
+
